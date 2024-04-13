@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf538fe7.css",
+    "main.js": "/static/js/main.61d8cfdb.js",
+    "static/media/elastic.png": "/static/media/elastic.629f26c08fd38d2cb303.png",
+    "static/media/redis.png": "/static/media/redis.ff23e9420fa71f70bb18.png",
+    "static/media/HeroImage.jpg": "/static/media/HeroImage.a05116cfa00b8c74a56a.jpg",
+    "static/media/ruby.png": "/static/media/ruby.21df7d6d43f21264ba04.png",
+    "static/media/rvlogo.png": "/static/media/rvlogo.7c3dd3a6e6677b8c61cb.png",
+    "static/media/bulma.png": "/static/media/bulma.51b9384765a1a3d4347b.png",
+    "static/media/puclogo.jpg": "/static/media/puclogo.98d898d49c38a6f60ade.jpg",
+    "static/media/styled-components.png": "/static/media/styled-components.086ad3368383b852b5f7.png",
+    "static/media/sidekiq.svg": "/static/media/sidekiq.f31aa501599a5336abf3866875724c1a.svg",
+    "static/media/vs.webp": "/static/media/vs.034361ab8cb56f34919b.webp",
+    "static/media/postman.webp": "/static/media/postman.7066eb08ea17b7fe2069.webp",
+    "index.html": "/index.html",
+    "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
+    "main.61d8cfdb.js.map": "/static/js/main.61d8cfdb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.61d8cfdb.js"
+  ]
+}
