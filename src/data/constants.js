@@ -17,6 +17,30 @@ import RLSImg from '../images/rlslogo.png'
 import PucImg from '../images/puclogo.jpg'
 import VmKattiImg from '../images/vmk.jpeg'
 
+import testride1 from '../images/testride/testride-1.png'
+import testride2 from '../images/testride/testride-2.png'
+import testride3 from '../images/testride/testride-3.png'
+import testride4 from '../images/testride/testride-4.png'
+import testride5 from '../images/testride/testride-5.png'
+
+import tr1 from '../images/twistedroad/tr-1.png'
+import tr2 from '../images/twistedroad/tr-2.png'
+import tr3 from '../images/twistedroad/tr-3.png'
+import tr4 from '../images/twistedroad/tr-4.png'
+import tr5 from '../images/twistedroad/tr-5.png'
+import tr6 from '../images/twistedroad/tr-6.png'
+import tr7 from '../images/twistedroad/tr-7.png'
+import tr8 from '../images/twistedroad/tr-8.png'
+import tr9 from '../images/twistedroad/tr-9.png'
+
+import optswap from '../images/optswap/optswap.png'
+
+import bootcamp1 from '../images/bootcamp/bootcamp-1.png'
+import bootcamp2 from '../images/bootcamp/bootcamp-2.png'
+import bootcamp3 from '../images/bootcamp/bootcamp-3.png'
+import bootcamp4 from '../images/bootcamp/bootcamp-4.png'
+
+
 import { calculateExperience } from '../components/Skills'
 
 export const Bio = {
@@ -246,8 +270,7 @@ export const projects = [
     date: "Feb 15, 2021 - Present",
     description:
       "Twisted Road is a peer-to-peer motorcycle rental platform that connects motorcycle owners with riders who want to rent motorcycles. It allows motorcycle owners to earn money by renting out their bikes to travelers or local riders, providing an alternative to traditional motorcycle rental companies. Riders can browse available motorcycles in their area, choose the one they want, and rent it for a specific period. Twisted Road handles the booking process, insurance, and other logistics to ensure a smooth rental experience for both owners and riders.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+    images: [tr1, tr2, tr3, tr4, tr5, tr6, tr7, tr8, tr9],
     tags: [
 			"React Js", "Ruby on Rails",
 			"HTML","Css","Javascript",
@@ -257,20 +280,21 @@ export const projects = [
     ],
     category: "web app",
     github: "#",
-    webapp: "https://frontend.golive.twistedroad.com/",
+		webapp: "https://frontend.golive.twistedroad.com/",
+		type: 'realtime'
   },
   {
     id: 0,
-    title: "Twisted Road Test Ride App",
+    title: "Extended Test Ride",
     date: "03/2022 - 07/2022",
     description:
       "Allows potential buyers to test out motorcycles listed on the Twisted Road platform before committing to a rental or purchase.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+    images: [testride1, testride2, testride3, testride4, testride5],
     tags: ["React Js", "Hooks", "Styled Components", "HTML", "Css", "Javascript", "Stripe", "MapBox"],
     category: "web app",
     github: "#",
-    webapp: "https://testride.staging.twistedroad.com",
+		webapp: "https://testride.staging.twistedroad.com/?vin=1HD1FBM16EB622940",
+		type: 'realtime'
   },
   {
     id: 1,
@@ -278,8 +302,7 @@ export const projects = [
     date: "02/2023 - 06/2023",
     description:
       "Optswap is a web3.0 based options trading webapp. Which is built on using blockchain technology.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    images: [optswap, optswap],
     tags: [
       "React Js", "D3.js",
 			"HTML", "Css", "Javascript",
@@ -288,7 +311,23 @@ export const projects = [
     ],
     category: "web app",
     github: "#",
-    webapp: "#",
+		webapp: "#",
+		type: 'realtime'
+	},
+	{
+    id: 2,
+    title: "Frontend Bootcamp",
+    date: "Apr 17, 2022",
+    description:
+      "Frontend Bootcamp is a standalone single page react application. Which has been completely built using Bootstrap5 Css and Flexbox feature.",
+    images: [bootcamp1, bootcamp2, bootcamp3, bootcamp4],
+    tags: [
+      "React Js", "HTML", "Css", "Flexbox"
+    ],
+    category: "web app",
+    github: "https://github.com/Bahubaliak/FrontendBootcamp/tree/master",
+		webapp: "https://bahubaliak.github.io/FrontendBootcamp/",
+		type: 'personal'
   },
 ];
 

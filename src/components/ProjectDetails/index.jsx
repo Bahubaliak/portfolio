@@ -2,6 +2,10 @@ import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
+import { Zoom } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 const Container = styled.div`
 width: 100%;
@@ -197,7 +201,13 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+										<div className="slide-container">
+											<Zoom scale={0.3}>
+												{
+													project.images.map((img, index) =>  <Image key={index} src={img} />)
+												}
+											</Zoom>
+										</div>
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
@@ -226,8 +236,17 @@ const index = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+											{project.type != 'personal' &&
+												<Tippy placement="right" content={
+													<span>Client project source code is not accessible.</span>
+												}>
+													<Button dull href={project?.github} target='new'>View Code</Button>
+												</Tippy>
+											}
+											{project.type == 'personal' &&
+												<Button dull href={project?.github} target='new'>View Code</Button>
+											}
+											<Button href={project?.webapp} target='new'>View Live App</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>
